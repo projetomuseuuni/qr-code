@@ -33,13 +33,13 @@ html {
   --shadow--medium: var(--shadow-3);
   --shadow--high: var(--shadow-4);
 
-  --spacing__xxsmall: var(--size-1);
-  --spacing__xsmall: var(--size-2);
-  --spacing__small: var(--size-3);
-  --spacing__regular: var(--size-4);
-  --spacing__medium: var(--size-6);
-  --spacing__large: var(--size-7);
-  --spacing__xlarge: var(--size-8);
+  --spacing--xxsmall: var(--size-1);
+  --spacing--xsmall: var(--size-2);
+  --spacing--small: var(--size-3);
+  --spacing--regular: var(--size-4);
+  --spacing--medium: var(--size-6);
+  --spacing--large: var(--size-7);
+  --spacing--xlarge: var(--size-8);
 
   --border__radius--small: var(--radius-1);
   --border__radius--regular: var(--radius-2);
@@ -73,4 +73,9 @@ html {
   --font__size--normal: var(--font-size-1);
   --font__size--large: var(--font-size-3);
   --font__size--xlarge: var(--font-size-5);
+}
+
+html {
+  color: var(--color__neutral--darker);
+  background-color: var(--color__neutral--lighter);
 }

@@ -1,23 +1,149 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-import Card from '../components/Card.astro';
-import { Image } from '../components/Image/Image';
+import { Image } from "../components/Image/Image";
+
+const pageName = "Nome da Peça";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>	
-		<Image 
-			alt="Teste"
-			src="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-		/>
-	</main>
+<Layout title={pageName}>
+  <main>
+    <h1>{pageName}</h1>
+
+    <Image
+      alt="Teste"
+      src="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+    />
+
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
+        odio, molestias voluptates totam ipsam asperiores, architecto repellat
+        hic accusamus corporis nulla eligendi adipisci? Temporibus quae
+        doloremque architecto non molestiae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
+        odio, molestias voluptates totam ipsam asperiores, architecto repellat
+        hic accusamus corporis nulla eligendi adipisci? Temporibus quae
+        doloremque architecto non molestiae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
+        odio, molestias voluptates totam ipsam asperiores, architecto repellat
+        hic accusamus corporis nulla eligendi adipisci? Temporibus quae
+        doloremque architecto non molestiae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
+        odio, molestias voluptates totam ipsam asperiores, architecto repellat
+        hic accusamus corporis nulla eligendi adipisci? Temporibus quae
+        doloremque architecto non molestiae.
+      </p>
+    </div>
+
+    <hr />
+
+    <h3>Próximas Peças Sugeridas</h3>
+
+    <ul>
+      <li>
+        <a href="/qr-code/#">Próxima Peça</a>
+      </li>
+      <li>
+        <a href="/qr-code/#">Próxima Peça</a>
+      </li>
+      <li>
+        <a href="/qr-code/#">Próxima Peça</a>
+      </li>
+      <li>
+        <a href="/qr-code/#">Próxima Peça</a>
+      </li>
+      <li>
+        <a href="/qr-code/#">Próxima Peça</a>
+      </li>
+      <li>
+        <a href="/qr-code/#">Próxima Peça</a>
+      </li>
+      <li>
+        <a href="/qr-code/#">Próxima Peça</a>
+      </li>
+      <li>
+        <a href="/qr-code/#">Próxima Peça</a>
+      </li>
+    </ul>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}	
+  main {
+    margin: auto;
+    padding: var(--spacing--medium);
+    max-width: 800px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    display: block;
+    text-align: center;
+
+    margin-bottom: var(--spacing--large);
+
+    font-size: var(--font-size-fluid-3);
+    color: var(--color__neutral--darker);
+  }
+
+  .content {
+    max-width: 80ch;
+    margin-top: var(--spacing--large);
+
+    color: var(--color__neutral--dark);
+  }
+
+  ul {
+    width: 100%;
+    padding-left: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: var(--spacing--small);
+
+    padding-top: var(--spacing--medium);
+  }
+
+  h3 {
+    width: 100%;
+    text-align: center;
+
+    font-size: var(--font__size--large);
+    color: var(--color__neutral--darker);
+  }
+
+  li {
+    position: relative;
+
+    list-style: none;
+
+    padding: var(--spacing--regular);
+    border: 1px solid var(--color__neutral--dark);
+    border-radius: var(--border__radius--large);
+  }
+
+  li a,
+  li a:visited {
+    font-size: var(--font__size--regular);
+
+    color: var(--color__brand--normal);
+    text-decoration-color: var(--color__brand--normal);
+  }
+
+  li a::after {
+  }
 </style>
