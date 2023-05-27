@@ -1,0 +1,76 @@
+/* the props */
+@import "open-props/style";
+
+/* optional imports that use the props */
+@import "open-props/normalize";
+@import "open-props/buttons";
+
+/* individual imports */
+@import "open-props/colors";
+@import "open-props/fonts";
+@import "open-props/easings";
+@import "open-props/animations";
+@import "open-props/sizes";
+@import "open-props/gradients";
+/* see PropPacks for the full list */
+
+html {
+  --color__brand--lighter: var(--indigo-3);
+  --color__brand--light: var(--indigo-5);
+  --color__brand--normal: var(--indigo-7);
+  --color__brand--dark: var(--indigo-9);
+  --color__brand--darker: var(--indigo-12);
+
+  --color__neutral--lighter: var(--gray-1);
+  --color__neutral--light: var(--gray-3);
+  --color__neutral--normal: var(--gray-5);
+  --color__neutral--dark: var(--gray-7);
+  --color__neutral--darker: var(--gray-9);
+
+  --gradient--blue: var(--gradient-7);
+
+  --shadow--low: var(--shadow-2);
+  --shadow--medium: var(--shadow-3);
+  --shadow--high: var(--shadow-4);
+
+  --spacing__xxsmall: var(--size-1);
+  --spacing__xsmall: var(--size-2);
+  --spacing__small: var(--size-3);
+  --spacing__regular: var(--size-4);
+  --spacing__medium: var(--size-6);
+  --spacing__large: var(--size-7);
+  --spacing__xlarge: var(--size-8);
+
+  --border__radius--small: var(--radius-1);
+  --border__radius--regular: var(--radius-2);
+  --border__radius--large: var(--radius-3);
+  --border__radius--full: var(--radius-round);
+
+  --layer__alwaysBottom: -1;
+  --layer__bottom: var(--layer-1);
+  --layer__low: var(--layer-2);
+  --layer__regular: var(--layer-3);
+  --layer__medium: var(--layer-4);
+  --layer__high: var(--layer-5);
+  --layer__alwaysTop: 100;
+
+  --transition__fast: var(ease-squish-1);
+  --transition__regular: var(ease-squish-2);
+  --transition__slow: var(ease-squish-4);
+
+  --font__family: var(--font-sans);
+
+  --font__weight--light: var(--font-weight-3);
+  --font__weight--normal: var(--font-weight-5);
+  --font__weight--bold: var(--font-weight-7);
+
+  --font__kerning--tight: var(--font-letterspacing-1);
+  --font__kerning--normal: var(--font-letterspacing-2);
+  --font__kerning--loose: var(--font-letterspacing-3);
+
+  --font__size--xsmall: var(--font-size-00);
+  --font__size--small: var(--font-size-0);
+  --font__size--normal: var(--font-size-1);
+  --font__size--large: var(--font-size-3);
+  --font__size--xlarge: var(--font-size-5);
+}

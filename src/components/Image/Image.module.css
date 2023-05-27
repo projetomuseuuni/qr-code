@@ -1,0 +1,4 @@
+.imageContainer {
+  box-shadow: var(--shadow--medium);
+  border-radius: var(--border__radius--regular);
+}
