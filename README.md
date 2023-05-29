@@ -1,6 +1,6 @@
-# **QR Code - Museu Universitário Academia**
+# QR Code - Museu Universitário Academia
 
-## **Astro**
+## Astro
 
 ### O que é?
 
@@ -16,7 +16,7 @@ Os componentes descritos na pasta de Layouts são aqueles que definem como pági
 
 Os componentes descritos na pasta de Pages são aqueles que virarão rotas da aplicação em si, eliminando a necessidade de configuração de rotas que fizemos com o React Router (o Astro faz essa confiuração por debaixo dos panos). No caso, usaremos a configuração de `prerender` que fará com que essas páginas virem arquivos `.html` com seu conteúdo já pré-renderizado para, entre outras coisas, garantir um menor tempo de carregamento das mesmas (o que não ocorre normalmente com o React puro)
 
-## **Como organizaremos o projeto**
+## Como organizaremos o projeto
 
 A ideia aqui é que faremos:
 
@@ -26,7 +26,47 @@ A ideia aqui é que faremos:
 - [ ] Criar a primeira página de QR Code completa com seu conteúdo
 - [ ] Replicar essa construção para as demais páginas até finalizar os primeiros QR Codes que serão feitos nesse primeiro período de 2023
 
-## **Possíveis Ideias para o futuro**
+## Como contribuir com o projeto
+
+> Os comandos via terminal abaixo são apenas para referência. Você pode realizar esses processos pela própria interface do VS Code ou de qualquer outro método que já conhecer e/ou preferir
+
+1. Faça um clone do repositório. Pegue a URL pelo botão `Code` na interface do github e digite no terminal o comando abaixo
+
+```sh
+$ git clone <url_do_repositório>
+```
+
+2. Crie um novo branch com um nome curto porém descritivo sobre o que você fará nele, com as palavras em minúsculo e separadas por hífen (snake-case).
+
+>Por exemplo: Um branch que será criado para a criação de um novo layout para páginas de um blog poderia ser: `'layout-para-blog'`
+
+```sh
+git checkout -b <nome_do_branch>
+```
+
+3. Após realizar as mudanças, realize o commit delas (de preferência, faça vários pequenos commits ao longo do seu trabalho na branch).
+
+```sh
+git commit -m <descrição_do_commit>
+```
+
+4. Suba as alterações para o repositório do github. No primeiro `push` que fizer de uma branch, o comando irá dar um erro avisando que você precisa indicar a qual branch remota a sua branch local diz respeito. Basta copiar o próprio comando que aparece nesse mensagem de erro e executar novamente
+
+```sh
+git push
+```
+
+5. Uma vez que o branch estiver no github e você tenha finalizado todas as suas alterações nele, basta criar um Pull Request. Isso ocorre pelo próprio site do Github. 
+
+> Num branch que acabou de receber commits novos aparece um botão verde `create pull request` ou você pode ir na aba "Pull Requests (que fica logo abaixo do nome do repositório) e clicar no botão "new pull request".
+
+> Certifique-se que o branch Base seja o `main` e o branch Compare seja o seu branch criado (ambos ficam logo abaixo do título, Compare Changes, e do subtítulo dessa página)
+
+> Adicione um nome e descrição que expliquem bem o trabalho que foi realizado por você nesse branch
+
+> Ao finalizar e criar o Pull Request, avise no grupo para que outra pessoa possa ver e aprovar o mesmo (todos os Pull Requests vão precisar de pelo menos uma aprovação de alguém que não seja quem o criou)
+
+## Possíveis Ideias para o futuro
 
 - [ ] Criar uma página para ser um index com todos os QR Codes para uso interno nosso e do pessoal do museu
 - [ ] Montar um gerador de QR Codes em uma das páginas para não depender de ferramentas externas (não é tão complicado usando algumas bibliotecas, mas também não é muita prioridade)
