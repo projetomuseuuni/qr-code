@@ -15,17 +15,20 @@
 /* see PropPacks for the full list */
 
 html {
-  --color__brand--lighter: var(--indigo-3);
-  --color__brand--light: var(--indigo-5);
-  --color__brand--normal: var(--indigo-7);
-  --color__brand--dark: var(--indigo-9);
-  --color__brand--darker: var(--indigo-12);
+  --color__brand--normal: #1a99d6;
+  --color__brand--dark: #2c3340;
 
-  --color__neutral--lighter: var(--gray-1);
-  --color__neutral--light: var(--gray-3);
-  --color__neutral--normal: var(--gray-5);
-  --color__neutral--dark: var(--gray-7);
-  --color__neutral--darker: var(--gray-9);
+  --color__neutral--lighter: #fbfcfd;
+  --color__neutral--light: #e8f2ff;
+  --color__neutral--dark: #596273;
+  --color__neutral--darker: #232021;
+
+  --color__accent--1: #8e2af0;
+  --color__accent--2: #00d5bb;
+  --color__accent--3: #2583fd;
+  --color__accent--4: #fc3762;
+  --color__accent--5: #ff9320;
+  --color__accent--6: #46ce1f;
 
   --gradient--blue: var(--gradient-7);
 
