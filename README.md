@@ -16,6 +16,82 @@ Os componentes descritos na pasta de Layouts são aqueles que definem como pági
 
 Os componentes descritos na pasta de Pages são aqueles que virarão rotas da aplicação em si, eliminando a necessidade de configuração de rotas que fizemos com o React Router (o Astro faz essa confiuração por debaixo dos panos). No caso, usaremos a configuração de `prerender` que fará com que essas páginas virem arquivos `.html` com seu conteúdo já pré-renderizado para, entre outras coisas, garantir um menor tempo de carregamento das mesmas (o que não ocorre normalmente com o React puro)
 
+
+### Escrevendo Componentes
+
+O Astro permite que a gente escreva os componentes usando qualquer um dos frameworks disponíveis nele que esteja configurado no projeto em questão. No nosso caso, o React. Porém ele também oferece um arquivo especial com a extensão `.astro` que premite escrever componentes na linguagem deles. A ideia aqui é que os componentes sejam escritos em React em si. Mas caso alguém entre no projeto, e desconheça a biblioteca, pode começar usando essa outra versão. A vantagem dela é que a estrutura é mais próxima do HTML padrão e pode oferecer uma barreira de entrada menor
+
+Para escrever um componente em `.astro` basta criar um arquivo com essa extensão, tipo: `NomeDoComponente.astro`. E escrever o código separado por blocos. O código Javascript associado ao componente fica escrito entre dois conjuntos de três hifens `---`, o código HTML é escrito solto logo após esses hífens e por fim coloca-se uma tag `<style>` ao fim do arquivo com os estilos daquele componente dentro.
+
+Ficando assim:
+
+```html
+---
+// Código Javascript
+...
+---
+
+<div>
+    <p>Código Html</p>
+    ...
+</div>
+
+<style>
+    /* Código CSS */
+    ...
+</style>
+```
+
+O bloco de Javascript é opcional, logo o componente pode ficar assim:
+
+```html
+<div>
+    <p>Código Html</p>
+    ...
+</div>
+
+<style>
+    /* Código CSS */
+    ...
+</style>
+```
+
+> Qualquer estilo escrito dentro de uma tag style de um componente Astro está vinculado ao escopo dele. Ou seja, um seletor `h1` só irá afetar as tags `<h1>` daquele componente e nenhuma outra. Mais detalhes em: [Estilos com Escopo](https://docs.astro.build/pt-br/guides/styling/#estilos-com-escopo)
+
+### Escrevendo Estilos
+
+O projeto está configurado para usar algumas variáveis CSS. Algumas delas foram criadas exclusivamente para esse projeto e estão presentes no arquivo `/src/styles/main.css` dentro do seletor HTML
+
+```css
+html {
+  --color__brand--normal: #1a99d6;
+  --color__brand--dark: #2c3340;
+
+  --color__neutral--lighter: #fbfcfd;
+  --color__neutral--light: #e8f2ff;
+  --color__neutral--dark: #596273;
+  --color__neutral--darker: #232021;
+
+  ...
+}
+```
+
+Para usar, basta chamar a função `var()` dentro do código CSS
+
+```css
+html {
+  color: var(--color__neutral--darker);
+  background-color: var(--color__neutral--lighter);
+}
+```
+
+Dê preferência para usar estas variáveis para manter um padrão dentro do site (desde cores, até espaçamentos, sombras, fontes e etc), mas caso precise de algo que não exista nelas você tem duas opções:
+
+- Usar o [Open Props](https://open-props.style/#getting-started), que já está configurado. Essa biblioteca é um conjunto de variáveis CSS prontos para serem usados. Desse modo, você manteria a mesma ideia do bloco de código acima (usando a função `var()`, porém com uma variável que está presente no site deles, por exemplo: `var(--animation-slide-in-left)` para usar uma animação de deslizamento para a esquerda)
+
+- Escrever o seu próprio CSS sem usar nenhuma variável. Não tem problema nenhum, mas mantive essa opção por último para que seja usado em terceiro caso mesmo
+
+
 ## Como organizaremos o projeto
 
 A ideia aqui é que faremos:
