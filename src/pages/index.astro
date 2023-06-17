@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 
 import { Image } from "../components/Image/Image";
+import { CardSugestao } from "../components/card/sugestao/CardSugestao";
 
 const pageName = "Nome da Peça";
 ---
@@ -48,28 +49,37 @@ const pageName = "Nome da Peça";
 
     <ul>
       <li>
-        <a href="/qr-code/#">Próxima Peça</a>
+        <CardSugestao
+          imgWidth="150px"
+          imgHeight="150px"
+          title="Título"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          img="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+          href="#"
+          alt="imagem"
+        />
       </li>
       <li>
-        <a href="/qr-code/#">Próxima Peça</a>
+        <CardSugestao
+          imgWidth="150px"
+          imgHeight="150px"
+          title="Título"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          img="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+          href="#"
+          alt="imagem"
+        />
       </li>
       <li>
-        <a href="/qr-code/#">Próxima Peça</a>
-      </li>
-      <li>
-        <a href="/qr-code/#">Próxima Peça</a>
-      </li>
-      <li>
-        <a href="/qr-code/#">Próxima Peça</a>
-      </li>
-      <li>
-        <a href="/qr-code/#">Próxima Peça</a>
-      </li>
-      <li>
-        <a href="/qr-code/#">Próxima Peça</a>
-      </li>
-      <li>
-        <a href="/qr-code/#">Próxima Peça</a>
+        <CardSugestao
+          imgWidth="150px"
+          imgHeight="150px"
+          title="Título"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          img="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+          href="#"
+          alt="imagem"
+        />
       </li>
     </ul>
   </main>
@@ -79,7 +89,7 @@ const pageName = "Nome da Peça";
   main {
     margin: auto;
     padding: var(--spacing--medium);
-    max-width: 800px;
+    max-width: 1000px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -130,10 +140,6 @@ const pageName = "Nome da Peça";
     position: relative;
 
     list-style: none;
-
-    padding: var(--spacing--regular);
-    border: 1px solid var(--color__neutral--dark);
-    border-radius: var(--border__radius--large);
   }
 
   li a,
