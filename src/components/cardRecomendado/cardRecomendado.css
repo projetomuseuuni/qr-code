@@ -1,0 +1,6 @@
+.cardRecomendado {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 40px;
+}
