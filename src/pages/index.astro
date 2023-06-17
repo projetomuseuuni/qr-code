@@ -2,9 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 
 import { Image } from "../components/Image/Image";
-import { CardSugestao } from "../components/card/sugestao/CardSugestao";
 
-import CardRecomendado from "../components/CardRecomendado/CardRecomendado"
+import { CardSugestao } from "../components/cards/sugestao/CardSugestao";
 
 const pageName = "Nome da Peça";
 ---
@@ -47,10 +46,6 @@ const pageName = "Nome da Peça";
 
     <hr />
 
-    <CardRecomendado>
-    
-    <hr />
-
     <h3>Próximas Peças Sugeridas</h3>
 
     <ul>
@@ -89,73 +84,73 @@ const pageName = "Nome da Peça";
       </li>
     </ul>
   </main>
+
+  <style>
+    main {
+      margin: auto;
+      padding: var(--spacing--medium);
+      max-width: 1000px;
+
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      display: block;
+      text-align: center;
+
+      margin-bottom: var(--spacing--large);
+
+      font-size: var(--font-size-fluid-3);
+      color: var(--color__neutral--darker);
+    }
+
+    .content {
+      max-width: 80ch;
+      margin-top: var(--spacing--large);
+
+      color: var(--color__neutral--dark);
+    }
+
+    ul {
+      width: 100%;
+      padding-left: 0;
+
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+
+      gap: var(--spacing--small);
+
+      padding-top: var(--spacing--medium);
+    }
+
+    h3 {
+      width: 100%;
+      text-align: center;
+
+      font-size: var(--font__size--large);
+      color: var(--color__neutral--darker);
+    }
+
+    li {
+      position: relative;
+
+      list-style: none;
+    }
+
+    li a,
+    li a:visited {
+      font-size: var(--font__size--regular);
+
+      color: var(--color__brand--normal);
+      text-decoration-color: var(--color__brand--normal);
+    }
+
+    li a::after {
+    }
+  </style>
 </Layout>
-
-<style>
-  main {
-    margin: auto;
-    padding: var(--spacing--medium);
-    max-width: 1000px;
-
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  h1 {
-    display: block;
-    text-align: center;
-
-    margin-bottom: var(--spacing--large);
-
-    font-size: var(--font-size-fluid-3);
-    color: var(--color__neutral--darker);
-  }
-
-  .content {
-    max-width: 80ch;
-    margin-top: var(--spacing--large);
-
-    color: var(--color__neutral--dark);
-  }
-
-  ul {
-    width: 100%;
-    padding-left: 0;
-
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-
-    gap: var(--spacing--small);
-
-    padding-top: var(--spacing--medium);
-  }
-
-  h3 {
-    width: 100%;
-    text-align: center;
-
-    font-size: var(--font__size--large);
-    color: var(--color__neutral--darker);
-  }
-
-  li {
-    position: relative;
-
-    list-style: none;
-  }
-
-  li a,
-  li a:visited {
-    font-size: var(--font__size--regular);
-
-    color: var(--color__brand--normal);
-    text-decoration-color: var(--color__brand--normal);
-  }
-
-  li a::after {
-  }
-</style>
