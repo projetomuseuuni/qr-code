@@ -27,3 +27,7 @@ export const CardSugestao = ({
     </a>
   );
 }
+
+
+
+
