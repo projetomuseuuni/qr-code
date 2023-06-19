@@ -6,9 +6,12 @@ export function CardComImagem(props) {
   return (
     <section className={styles.cardComImagem}>
       <img className={styles.cardImagem} src={props.cardImagem}></img>
-      <strong className={styles.cardTitulo}>{props.cardTitulo} </strong>
 
-      <span className={styles.cardDescricao}>{props.cardDescricao}</span>
+      <div className={styles.cardConteudo}>
+        <strong className={styles.cardTitulo}>{props.cardTitulo} </strong>
+
+        <span className={styles.cardDescricao}>{props.cardDescricao}</span>
+      </div>
     </section>
   );
 }
