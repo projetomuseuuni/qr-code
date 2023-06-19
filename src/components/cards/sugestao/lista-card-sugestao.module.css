@@ -1,5 +1,4 @@
 .listaCardSugestao {
-    display: flex;
-    gap: 80px;
-    
-  }
+  display: flex;
+  gap: 80px;
+}

@@ -1,4 +1,9 @@
 .imageContainer {
+  width: var(--width);
+  height: var(--height);
+
+  object-fit: cover;
+
   box-shadow: var(--shadow--medium);
   border-radius: var(--border__radius--regular);
 }

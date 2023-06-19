@@ -1,4 +1,4 @@
-import { Image } from "../../Image/Image"
+import { Image } from "../../images/Image/Image";
 import styles from "./card-sugestao.module.css";
 
 export const CardSugestao = ({
@@ -8,17 +8,12 @@ export const CardSugestao = ({
   description,
   img,
   href,
-  alt
+  alt,
 }) => {
   return (
     <a href={href} className={styles.container}>
       <div className={styles.containerImg}>
-        <Image
-          alt={alt}
-          src={img}
-          width={width}
-          height={height}
-        />
+        <Image alt={alt} src={img} width={width} height={height} />
       </div>
       <div className={styles.containerText}>
         <h1 className={styles.cardTitle}>{title}</h1>
@@ -26,8 +21,4 @@ export const CardSugestao = ({
       </div>
     </a>
   );
-}
-
-
-
-
+};
