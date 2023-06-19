@@ -1,11 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Image } from "../components/Image/Image";
-import { ListaCardSugestao } from "../components/cards/sugestao/ListaCardSugestao";
-
-import { CardSugestao } from "../components/cards/sugestao/CardSugestao";
 
 import { CardDisplay } from "../components/cards/display/CardDisplay";
+import { ListaCardSugestao } from "../components/cards/sugestao/ListaCardSugestao";
+import { TituloCorpoTxt } from "../components/titulo/TituloCorpoTxt/TituloCorpoTxt";
 
 const pageName = "Nome da Peça";
 ---
@@ -30,6 +28,8 @@ const pageName = "Nome da Peça";
     </p>
   </CardDisplay>
   <main>
+    <TituloCorpoTxt />
+
     <h3>Sugestão de próximas peças</h3>
 
     <ListaCardSugestao />
