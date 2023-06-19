@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 
 import { CardDisplay } from "../components/cards/display/CardDisplay";
+import { CardComImagem } from "../components/cards/comImagem/CardComImagem";
 import { ListaCardSugestao } from "../components/cards/sugestao/ListaCardSugestao";
 import { TituloCorpoTxt } from "../components/titulo/TituloCorpoTxt/TituloCorpoTxt";
 
@@ -29,6 +30,21 @@ const pageName = "Nome da Peça";
   </CardDisplay>
   <main>
     <TituloCorpoTxt />
+
+    <div style={{ display: "flex", gap: "2rem", padding: "2rem" }}>
+      <CardComImagem
+        cardTitulo="Descrição curta da Imagem"
+        cardDescricao="Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus."
+        cardImagem="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+      />
+      <CardComImagem
+        cardTitulo="Descrição curta da Imagem"
+        cardDescricao="Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus."
+        cardImagem="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+      />
+    </div>
+
+    <hr />
 
     <h3>Sugestão de próximas peças</h3>
 
