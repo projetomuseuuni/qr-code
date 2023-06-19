@@ -10,22 +10,19 @@ import { CardDisplay } from "../components/cards/display/CardDisplay";
 const pageName = "Nome da Peça";
 ---
 
-<Layout title="Nome da Peça">
+<Layout title={pageName}>
+  <CardDisplay
+    img="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+    alt="imagem"
+    title={pageName}
+    description=
+  ><p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero odio, molestias voluptates totam ipsam asperiores, architecto repellat hic accusamus corporis nulla eligendi adipisci? Temporibus quae doloremque architecto non molestiae.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero odio, molestias voluptates totam ipsam asperiores, architecto repellat hic accusamus corporis nulla eligendi adipisci? Temporibus quae doloremque architecto non molestiae.
+  </p></CardDisplay>
   <main>
-    <h1>Nome da Peça</h1>
-
-    <CardDisplay
-      imgWidth="350px"
-      imgHeight="550px"
-      img="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-      alt="imagem"
-      title={pageName}
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    />
-    <Image
-      alt="Teste"
-      src="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-    />
 
     <div class="content">
       <p>
