@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "../components/Image/Image";
-import {ListaCardSugestao} from "../components/cards/sugestao/ListaCardSugestao";
+import { ListaCardSugestao } from "../components/cards/sugestao/ListaCardSugestao";
 
 import { CardSugestao } from "../components/cards/sugestao/CardSugestao";
 
@@ -15,44 +15,21 @@ const pageName = "Nome da Peça";
     img="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
     alt="imagem"
     title={pageName}
-    description=
-  ><p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero odio, molestias voluptates totam ipsam asperiores, architecto repellat hic accusamus corporis nulla eligendi adipisci? Temporibus quae doloremque architecto non molestiae.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero odio, molestias voluptates totam ipsam asperiores, architecto repellat hic accusamus corporis nulla eligendi adipisci? Temporibus quae doloremque architecto non molestiae.
-  </p></CardDisplay>
+  >
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero odio,
+      molestias voluptates totam ipsam asperiores, architecto repellat hic
+      accusamus corporis nulla eligendi adipisci? Temporibus quae doloremque
+      architecto non molestiae.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero odio,
+      molestias voluptates totam ipsam asperiores, architecto repellat hic
+      accusamus corporis nulla eligendi adipisci? Temporibus quae doloremque
+      architecto non molestiae.
+    </p>
+  </CardDisplay>
   <main>
-
-    <div class="content">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
-        odio, molestias voluptates totam ipsam asperiores, architecto repellat
-        hic accusamus corporis nulla eligendi adipisci? Temporibus quae
-        doloremque architecto non molestiae.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
-        odio, molestias voluptates totam ipsam asperiores, architecto repellat
-        hic accusamus corporis nulla eligendi adipisci? Temporibus quae
-        doloremque architecto non molestiae.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
-        odio, molestias voluptates totam ipsam asperiores, architecto repellat
-        hic accusamus corporis nulla eligendi adipisci? Temporibus quae
-        doloremque architecto non molestiae.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
-        odio, molestias voluptates totam ipsam asperiores, architecto repellat
-        hic accusamus corporis nulla eligendi adipisci? Temporibus quae
-        doloremque architecto non molestiae.
-      </p>
-    </div>
-
-    <hr />
-
     <h3>Sugestão de próximas peças</h3>
 
     <ListaCardSugestao />
@@ -95,7 +72,6 @@ const pageName = "Nome da Peça";
     }
 
     h3 {
-      
       width: 100%;
       text-align: center;
       font-size: var(--font__size--large);
@@ -112,8 +88,7 @@ const pageName = "Nome da Peça";
     li a:visited {
       font-size: var(--font__size--regular);
       color: var(--color__brand--normal);
-      text-decoration-color:
+      text-decoration-color: ;
     }
-    
   </style>
 </Layout>
