@@ -57,9 +57,9 @@ html {
   --layer__high: var(--layer-5);
   --layer__alwaysTop: 100;
 
-  --transition__fast: var(ease-squish-1);
-  --transition__regular: var(ease-squish-2);
-  --transition__slow: var(ease-squish-4);
+  --transition__fast: var(--ease-squish-1);
+  --transition__regular: var(--ease-squish-2);
+  --transition__slow: var(--ease-squish-4);
 
   --font__family: var(--font-sans);
 
