@@ -1,0 +1,27 @@
+.cardTitle {
+    font-family: var(--font__family);
+    font-size: var(--font__size--large);
+    color: var(--color__neutral--darker);
+  }
+  
+  .cardDescription {
+    font-family: var(--font__family);
+    font-size: var(--font__size--small);
+    color: var(--color__neutral--dark);
+    font-weight: var(--font__weight--normal);
+  }
+  
+  .container {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: var(--border__radius--large);
+    padding: var(--spacing--regular);
+  }
+  
+  .containerDisplay {
+    flex: 1;
+  }
+
+  .containerImg{
+    margin-left: auto;
+  }
