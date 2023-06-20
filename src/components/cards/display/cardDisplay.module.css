@@ -1,34 +1,35 @@
-.containerText{
+.containerDisplay {
+  margin: auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerDisplay > *:nth-child(1) {
+  margin-right: var(--spacing--xlarge);
+}
+
+.containerText {
   padding-top: var(--spacing--large);
   padding-right: var(--spacing--small);
 }
 
 .cardTitle {
+  display: block;
+  margin-bottom: var(--spacing--small);
+
+  color: var(--color__accent--3);
   font-family: var(--font__family);
   font-size: var(--font-size-fluid-3);
-  color: var(--color__accent--3);
 }
 
 .cardDescription {
-  font-family: var(--font__family);
-  font-size: var(--font__size--normal);
-  color: var(--color__neutral--dark);
-  font-weight: var(--font__weight--light);
-  margin-left: var(--spacing--regular);
+  display: block;
+  margin-left: var(--spacing--xxsmall);
+
+  max-inline-size: var(--size-content-3);
 }
 
-.containerDisplay {
-  display: flex;
-  justify-content:space-between;
-  flex: 1;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.containerImg{
-  width: 25rem;
-  height: 32rem;
-  object-fit: cover;
-  box-shadow: var(--shadow--medium);
-  border-radius: var(--border__radius--regular);
+.cardDescription > p {
+  margin-bottom: 1rem;
 }

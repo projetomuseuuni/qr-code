@@ -1,110 +1,180 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
+import { Image } from "../components/images/Image/Image";
+
 import { CardDisplay } from "../components/cards/display/CardDisplay";
 import { CardComImagem } from "../components/cards/comImagem/CardComImagem";
 import { ListaCardSugestao } from "../components/cards/sugestao/ListaCardSugestao";
-import { TituloCorpoTxt } from "../components/titulo/TituloCorpoTxt/TituloCorpoTxt";
+
+import { Titulo } from "../components/titulo/Titulo/Titulo";
+import { CorpoTexto } from "../components/titulo/CorpoTexto/CorpoTexto";
 
 const pageName = "Nome da Peça";
 ---
 
 <Layout title={pageName}>
-  <CardDisplay
-    img="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-    alt="imagem"
-    title={pageName}
-  >
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero odio,
-      molestias voluptates totam ipsam asperiores, architecto repellat hic
-      accusamus corporis nulla eligendi adipisci? Temporibus quae doloremque
-      architecto non molestiae.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero odio,
-      molestias voluptates totam ipsam asperiores, architecto repellat hic
-      accusamus corporis nulla eligendi adipisci? Temporibus quae doloremque
-      architecto non molestiae.
-    </p>
-  </CardDisplay>
   <main>
-    <TituloCorpoTxt />
+    <CardDisplay img="/assets/fotoQuadro.jpg" alt="imagem" title={pageName}>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
+        odio, molestias voluptates totam ipsam asperiores, architecto repellat
+        hic accusamus corporis nulla eligendi adipisci? Temporibus quae
+        doloremque architecto non molestiae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
+        odio, molestias voluptates totam ipsam asperiores, architecto repellat
+        hic accusamus corporis nulla eligendi adipisci? Temporibus quae
+        doloremque architecto non molestiae.
+      </p>
+    </CardDisplay>
 
-    <div style={{ display: "flex", gap: "2rem", padding: "2rem" }}>
-      <CardComImagem
-        cardTitulo="Descrição curta da Imagem"
-        cardDescricao="Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus."
-        cardImagem="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-      />
-      <CardComImagem
-        cardTitulo="Descrição curta da Imagem"
-        cardDescricao="Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus."
-        cardImagem="https://images.unsplash.com/photo-1682685797795-5640f369a70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-      />
-    </div>
+    <section class="content">
+      <div class="contentLine">
+        <Titulo level="2">Primeiro Subtitulo</Titulo>
+
+        <div class="contentSpacer"></div>
+
+        <CorpoTexto>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
+          odio, molestias voluptates totam ipsam asperiores, architecto repellat
+          hic accusamus corporis nulla eligendi adipisci? Temporibus quae
+          doloremque architecto non molestiae.
+        </CorpoTexto>
+      </div>
+
+      <div class="contentBlockSpacer"></div>
+
+      <div class="doubleColumns">
+        <CardComImagem
+          titulo="Descrição curta da Imagem"
+          imagem="/assets/fotoRaptor2.jpg"
+        >
+          Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
+          fringilla accumsan, risus sem sollicitudin lacus, ut interdum.
+        </CardComImagem>
+
+        <CardComImagem
+          titulo="Descrição curta da Imagem"
+          imagem="/assets/fotoRaptor2.jpg"
+        >
+          Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
+          fringilla accumsan, risus sem sollicitudin lacus, ut interdum.
+        </CardComImagem>
+      </div>
+
+      <div class="contentBlockSpacer"></div>
+
+      <div class="doubleColumns">
+        <Image
+          width="34rem"
+          height="28rem"
+          src="/assets/fotoQuadro.jpg"
+          alt="Foto exemplo"
+        />
+
+        <div class="contentLine">
+          <Titulo level="2">Segundo Subtitulo</Titulo>
+
+          <div class="contentSpacer"></div>
+
+          <CorpoTexto>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
+            odio, molestias voluptates totam ipsam asperiores, architecto
+            repellat hic accusamus corporis nulla eligendi adipisci? Temporibus
+            quae doloremque architecto non molestiae.
+          </CorpoTexto>
+        </div>
+      </div>
+    </section>
+
+    <div class="contentBlockSpacer"></div>
+
+    <Image
+      width="100%"
+      height="28rem"
+      src="/assets/fotoLarga.jpg"
+      alt="Foto exemplo"
+      withDetails={false}
+    />
+
+    <div class="contentBlockSpacer"></div>
+
+    <section class="content">
+      <div class="contentLine">
+        <Titulo level="2">Terceiro Subtitulo</Titulo>
+
+        <div class="contentSpacer"></div>
+
+        <CorpoTexto>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
+          odio, molestias voluptates totam ipsam asperiores, architecto repellat
+          hic accusamus corporis nulla eligendi adipisci? Temporibus quae
+          doloremque architecto non molestiae.
+        </CorpoTexto>
+      </div>
+    </section>
 
     <hr />
 
-    <h3>Sugestão de próximas peças</h3>
+    <div class="content">
+      <h3 class="suggestionSubtitle">Sugestão de próximas peças</h3>
 
-    <ListaCardSugestao />
+      <ListaCardSugestao />
+    </div>
   </main>
 
   <style>
     main {
-      margin: auto;
-      padding: var(--spacing--medium);
-      max-width: 1000px;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      justify-content: center;
-    }
-
-    h1 {
-      display: block;
-      text-align: center;
-      margin-bottom: var(--spacing--large);
-      font-size: var(--font-size-fluid-3);
-      color: var(--color__neutral--darker);
+      padding-top: var(--size-10);
     }
 
     .content {
-      max-width: 80ch;
+      margin: auto;
+      max-width: 900px;
+      padding: var(--spacing--medium);
+    }
+
+    .content:first-of-type {
+      padding-top: var(--size-10);
+    }
+
+    .contentLine {
+      margin: auto;
+      width: fit-content;
       margin-top: var(--spacing--large);
       color: var(--color__neutral--dark);
     }
 
-    ul {
-      width: 100%;
-      padding-left: 0;
+    .doubleColumns {
       display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-content: center;
-      gap: var(--spacing--small);
-      padding-top: var(--spacing--medium);
+      gap: 2rem;
+      padding: 2rem;
     }
 
-    h3 {
+    .contentBlockSpacer {
+      margin: var(--spacing--xlarge) 0;
+    }
+
+    .contentSpacer {
+      margin: var(--spacing--regular) 0;
+    }
+
+    hr {
+      opacity: 0.4;
+      height: var(--border-size-1);
+      background-color: var(--color__neutral--dark);
+    }
+
+    .suggestionSubtitle {
       width: 100%;
       text-align: center;
       font-size: var(--font__size--large);
       color: var(--color__neutral--darker);
       padding-bottom: 80px;
-    }
-
-    li {
-      position: relative;
-      list-style: none;
-    }
-
-    li a,
-    li a:visited {
-      font-size: var(--font__size--regular);
-      color: var(--color__brand--normal);
-      text-decoration-color: ;
     }
   </style>
 </Layout>

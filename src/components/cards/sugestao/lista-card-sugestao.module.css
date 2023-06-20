@@ -1,4 +1,6 @@
 .listaCardSugestao {
   display: flex;
-  gap: 80px;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: var(--spacing--xlarge);
 }

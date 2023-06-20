@@ -5,12 +5,12 @@ import styles from "./CardComImagem.module.css";
 export function CardComImagem(props) {
   return (
     <section className={styles.cardComImagem}>
-      <img className={styles.cardImagem} src={props.cardImagem}></img>
+      <img className={styles.cardImagem} src={props.imagem}></img>
 
       <div className={styles.cardConteudo}>
-        <strong className={styles.cardTitulo}>{props.cardTitulo} </strong>
+        <strong className={styles.cardTitulo}>{props.titulo} </strong>
 
-        <span className={styles.cardDescricao}>{props.cardDescricao}</span>
+        <p className={styles.cardDescricao}>{props.children}</p>
       </div>
     </section>
   );

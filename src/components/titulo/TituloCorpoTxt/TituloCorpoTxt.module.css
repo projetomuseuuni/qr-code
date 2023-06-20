@@ -1,41 +1,40 @@
 .content {
-    max-width: 80ch;
-    margin-top: var(--spacing--large);
-    color: var(--color__neutral--dark);
-    margin-bottom: var(--spacing--large);
-  }
+  max-width: 80ch;
+  margin-top: var(--spacing--large);
+  color: var(--color__neutral--dark);
+  margin-bottom: var(--spacing--large);
+}
 
 .p1 {
-    
-    font-size: var(--font-size-fluid-3);
-      color: var(--color__neutral--darker);
-    /* Estilos para o primeiro subtítulo */
-  }
-  
+  font-size: var(--font-size-fluid-3);
+  color: var(--color__neutral--darker);
+  /* Estilos para o primeiro subtítulo */
+}
+
 .subtitle-paragraph1 {
-    text-align: center;
-    /* Estilos para o primeiro parágrafo do subtítulo */
-  }
-  
+  text-align: center;
+  /* Estilos para o primeiro parágrafo do subtítulo */
+}
+
 .p2 {
-    font-size: var(--font-size-fluid-3);
-      color: var(--color__neutral--darker);
-    /* Estilos para o segundo subtítulo */
-  }
-  
+  font-size: var(--font-size-fluid-3);
+  color: var(--color__neutral--darker);
+  /* Estilos para o segundo subtítulo */
+}
+
 .subtitle-paragraph2 {
-    text-align: center;
-    /* Estilos para o segundo parágrafo do subtítulo */
-  }
-  
+  text-align: center;
+  /* Estilos para o segundo parágrafo do subtítulo */
+}
+
 .p3 {
-    font-size: var(--font-size-fluid-3);
-      color: var(--color__neutral--darker);
-    /* Estilos para o terceiro subtítulo */
-  }
-  
+  font-size: var(--font-size-fluid-3);
+  color: var(--color__neutral--darker);
+  /* Estilos para o terceiro subtítulo */
+}
+
 .subtitle-paragraph3 {
-    text-align: center;
-    margin-bottom: var(--spacing--large);
-    /* Estilos para o terceiro parágrafo do subtítulo */
-  }
+  text-align: center;
+  margin-bottom: var(--spacing--large);
+  /* Estilos para o terceiro parágrafo do subtítulo */
+}
