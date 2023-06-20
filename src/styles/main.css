@@ -71,14 +71,38 @@ html {
   --font__kerning--normal: var(--font-letterspacing-2);
   --font__kerning--loose: var(--font-letterspacing-3);
 
+  --font__lineHeight--tight: var(--font-lineheight-0);
+  --font__lineHeight--normal: var(--font-lineheight-1);
+  --font__lineHeight--loose: var(--font-lineheight-2);
+
   --font__size--xsmall: var(--font-size-00);
   --font__size--small: var(--font-size-0);
-  --font__size--normal: var(--font-size-1);
-  --font__size--large: var(--font-size-3);
+  --font__size--normal: var(--font-size-2);
+  --font__size--medium: var(--font-size-3);
+  --font__size--large: var(--font-size-4);
   --font__size--xlarge: var(--font-size-5);
 }
 
 html {
   color: var(--color__neutral--darker);
   background-color: var(--color__neutral--lighter);
+}
+
+p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: var(--font__family);
+  color: var(--color__neutral--dark);
+  font-size: var(--font__size--medium);
+  font-weight: var(--font__weight--light);
+  letter-spacing: var(--font__kerning--tight);
+  line-height: var(--font__lineHeight--tight);
+
+  hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  word-break: break-word;
+  -ms-word-break: break-all;
+  word-wrap: break-word;
 }

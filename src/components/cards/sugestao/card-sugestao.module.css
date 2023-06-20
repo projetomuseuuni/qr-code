@@ -13,9 +13,13 @@
 
 .container {
   display: flex;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: var(--border__radius--large);
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+
   padding: var(--spacing--regular);
+  border-radius: var(--border__radius--large);
+  box-shadow: var(--shadow--medium);
 }
 
 .containerImg {
@@ -27,8 +31,5 @@
 }
 
 .containerText {
-  padding-left: 4%;
-  width: 60%;
-  position: relative;
-  transform: translateY(25%);
+  padding-left: var(--spacing--regular);
 }

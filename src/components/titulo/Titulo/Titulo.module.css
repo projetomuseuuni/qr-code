@@ -1,0 +1,6 @@
+.heading {
+  max-inline-size: var(--size-header-3);
+
+  font-size: var(--font-size-fluid-2);
+  color: var(--color__neutral--darker);
+}

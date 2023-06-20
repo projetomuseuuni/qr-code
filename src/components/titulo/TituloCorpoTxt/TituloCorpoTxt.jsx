@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styles from "./TituloCorpoTxt.module.css";
 
 export const TituloCorpoTxt = () => {
@@ -34,5 +34,3 @@ export const TituloCorpoTxt = () => {
     </div>
   );
 };
-
-
